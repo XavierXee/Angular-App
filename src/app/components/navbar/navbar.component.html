@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <div class="navbar--items">
+        <a class="navbar--item navbar--item__logo" routerLink="/">
+            <img class="navbar--logo" src="assets/logo.png">
+        </a>
+        <a class="navbar--item" routerLink="/">
+            <i class="navbar--item-icon fas fa-home"></i>
+            <span class="navbar--item-text">Home</span>
+        </a>
+        <a class="navbar--item" routerLink="/products">
+            <i class="navbar--item-icon fas fa-th"></i>
+            <span class="navbar--item-text">Products</span>
+        </a>
+        <a class="navbar--item" *ngIf="currentCustomer" (click)="logout()">
+            <i class="navbar--item-icon fas fa-sign-out-alt"></i>
+            <span class="navbar--item-text">Logout</span>
+        </a>
+    </div>
+</nav>

@@ -1,10 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { NavbarComponent } from '@app/components';
 import { HttpClientTestingModule } from "@angular/common/http/testing";
-import { AlertComponent, NavbarComponent } from "@app/components";
 
-describe('AppComponent', () => {
+describe('NavbarComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
@@ -12,17 +11,15 @@ describe('AppComponent', () => {
                 RouterTestingModule
             ],
             declarations: [
-                NavbarComponent,
-                AlertComponent,
-                AppComponent
+                NavbarComponent
             ],
         }).compileComponents();
     }));
 
-    it('should create the app', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
+    it('should create the nav bar component', () => {
+        const fixture = TestBed.createComponent(NavbarComponent);
+        const navBar = fixture.debugElement.componentInstance;
+        expect(navBar).toBeTruthy();
     });
 
 });

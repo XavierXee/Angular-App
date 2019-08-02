@@ -1,0 +1,18 @@
+@import './../../../variables';
+
+.alert {
+    color: $alert-color;
+    padding: 10px;
+}
+
+.alert__default {
+    background-color: $alert-default-background-color;
+}
+
+.alert__success {
+    background-color: $alert-success-background-color;
+}
+
+.alert__danger {
+    background-color: $alert-danger-background-color;
+}

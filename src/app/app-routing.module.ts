@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { LoginPage } from './pages';
+import { ProductsPage } from './pages';
+import { AuthenticationGuard } from './guards';
 
-const routes: Routes = [];
+const appRoutes: Routes = [
+    { path: '', component: LoginPage,  },
+    { path: 'products', component: ProductsPage, canActivate: [AuthenticationGuard] },
+    { path: '**', redirectTo: '' }
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const routing = RouterModule.forRoot(appRoutes);

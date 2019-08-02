@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Product0",
+            "currentPrice": 300,
+            "lastUpdate": 1564693178086
+        },
+        {
+            "id": 1,
+            "name": "Product1",
+            "currentPrice": 150,
+            "lastUpdate": 1564693204999
+        },
+        {
+            "id": 2,
+            "name": "Product2",
+            "currentPrice": 250,
+            "lastUpdate": 1564693242071
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+@import './../../../variables';
+
+.product {
+    padding: 10px;
+}
+
+.product--header {
+    padding: 2px 20px;
+    background-color: $product-header-background-color;
+    color: $product-header-text-color;
+    border-bottom: solid 4px $product-header-border-color;
+}
+
+.product--body {
+    padding: 2px 20px;
+    background-color: $product-body-background-color;
+    color: $product-body-text-color;
+}

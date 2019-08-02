@@ -1,0 +1,10 @@
+.app-main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+    align-content: stretch;
+}
+
+.app-main--container {
+    height: calc(100% - 60px);
+}

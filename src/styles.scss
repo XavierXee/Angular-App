@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+body {
+    font-family: Helvetica;
+    background-color: #e6e6e6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: $header-background-color;
+    color: $header-background-color;
+    border-bottom: solid 10px $header-border-color;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    border-bottom: solid 40px $footer-border-color;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: $link-text-color;
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+}

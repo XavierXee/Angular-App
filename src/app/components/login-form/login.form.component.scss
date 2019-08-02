@@ -1,0 +1,57 @@
+@import './../../../variables';
+
+.login-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.login-form--group {
+    position: relative;
+}
+
+.login-form--input-icon {
+    position: absolute;
+    color: $input-icon-color;
+    top: 18px;
+    z-index: 1;
+    left: 12px;
+    font-size: 20px;
+}
+
+.login-form--input {
+    position: relative;
+    padding: 4px 4px 4px 38px;
+    color: #000;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: inherit;
+    line-height: 50px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 3px;
+    margin: 4px 0;
+    border: solid 1px $input-border-color;
+    outline-width: 0;
+}
+
+.login-form--input:focus {
+    outline: none;
+    border-color: $input-border-color__focus;
+}
+
+.login-form--button {
+    height: 50px;
+    margin: 4px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    color: $button-text-color;
+    background-color: $button-background-color;
+}
+
+.login-form--alert {
+    color: $alert-color;
+}

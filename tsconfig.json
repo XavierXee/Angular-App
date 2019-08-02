@@ -2,15 +2,22 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@environments/*": ["src/environments/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2016",
     "typeRoots": [
       "node_modules/@types"
     ],

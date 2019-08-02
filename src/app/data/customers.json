@@ -1,0 +1,19 @@
+{
+    "customers": [
+        {
+            "id": 0,
+            "name": "test-customer-0",
+            "password": "test-customer-0"
+        },
+        {
+            "id": 1,
+            "name": "test-customer-1",
+            "password": "test-customer-1"
+        },
+        {
+            "id": 2,
+            "name": "test-customer-2",
+            "password": "test-customer-2"
+        }
+    ]
+}
