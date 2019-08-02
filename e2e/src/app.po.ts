@@ -6,11 +6,15 @@ export class AppPage {
         return browser.get(browser.baseUrl) as Promise<any>;
     }
 
-    // getTitleText() {
-    //     return element(by.css('app-root h1')).getText() as Promise<string>;
-    // }
-
     getHeadingText() {
-        return element(by.css('page--title')).getText();
+        return element(by.css('page--title')).get() as Promise<string>;
+    }
+
+    getNavBarItemsNumber() {
+        return element.all(by.css('navbar--items')).length as Promise<number>;
+    }
+
+    getFormInputsNumber() {
+        return element.all(by.tagName('input')).length as Promise<number>;
     }
 }

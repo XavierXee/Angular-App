@@ -8,9 +8,34 @@ describe('Angular App', () => {
         page = new AppPage();
     });
 
-    it('should display Login Form', () => {
+    it('should display Login Page', () => {
         page.navigateTo();
-        expect(page.getHeadingText()).toEqual('Login');
+        setTimeout(() => {
+            expect(page.getHeadingText()).toEqual('Login');
+            // expect(page.getHeadingText()).toEqual(3);
+        }, 10000);
+    });
+
+    it('should display NavBar with min 3 children', () => {
+        page.navigateTo();
+        setTimeout(() => {
+            expect(page.getNavBarItemsNumber()).toBeGreaterThanOrEqual(3);
+            // expect(page.getHeadingText()).toEqual(3);
+        }, 10000);
+    });
+
+    it('should display NavBar with max 4 children', () => {
+        page.navigateTo();
+        setTimeout(() => {
+            expect(page.getNavBarItemsNumber()).toBeLessThanOrEqual(4);
+        }, 10000);
+    });
+
+    it('should display Login form with 2 inputs', () => {
+        page.navigateTo();
+        setTimeout(() => {
+            expect(page.getFormInputsNumber()).toEqual(2);
+        }, 10000);
     });
 
     afterEach(async () => {
